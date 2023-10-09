@@ -1,15 +1,17 @@
 <script>
+import AppHero from './components/AppHero.vue';
 import AppTitle from './components/AppTitle.vue';
 
 export default {
   name: "App.vue",
   components:{
-        AppTitle
+        AppTitle,
+        AppHero
       },
 
   data(){
     return{
-      titolo: "App con Vue"
+      titolo: "App con VITE"
     }
   }
 }
@@ -17,10 +19,12 @@ export default {
 
 <template>
   <AppTitle />
-  <h1>{{ titolo }}</h1>
-  
+  <AppHero />
+  <p>{{ titolo }}</p>
 </template>
 
 <style>
-
+body{
+  text-align: center;
+}
 </style>
